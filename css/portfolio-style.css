@@ -26,12 +26,18 @@ img {
 	-webkit-transform: translateZ(0);
 	/* Chrome, Safari, Opera */
 	transform: translateZ(0);
+	cursor: pointer;
+	transition:transform 0.25s ease;
+}
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
 }
 
 .btn {
 	background-color: #edc7b7;
-	color: #edc7b7;
 	border-radius: 50%;
+	size-adjust: 20px;
 }
 
 #myBtn {
@@ -47,6 +53,15 @@ img {
 	outline: none;
 	background-color: #3b384b;
 	cursor: pointer;
+}
+
+#myBtn:hover {
+	background-color: #e5575e;
+}
+
+#myBtn img {
+	margin-bottom: 0.25rem;
+	width: 18px;
 }
 
 #toggle {
